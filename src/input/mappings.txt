@@ -1,0 +1,7 @@
+1 - common::ReportAndLogError()
+2 - TlsAraLogger::LogVerbose()
+3 - TlsAraLogger::LogError()
+4 - TlsAraLogger::LogDebug()
+5 - ClientStateClientHello::OnHandshakeMessageReceived()
+6 - ClientStateClientHello::OnAlertMessageReceived()
+7 - ServerStateClientHello::OnHandshakeMessageReceived()

@@ -1,0 +1,38 @@
+Topological order:
+1:
+Function: common::ReportAndLogError()
+----
+2: TlsAraLogger::LogVerbose()
+4: TlsAraLogger::LogDebug()
+----
+
+3:
+Function: TlsAraLogger::LogError()
+----
+4: TlsAraLogger::LogDebug()
+----
+
+4:
+Function: TlsAraLogger::LogDebug()
+----
+5: ClientStateClientHello::OnHandshakeMessageReceived()
+7: ServerStateClientHello::OnHandshakeMessageReceived()
+----
+
+2:
+Function: TlsAraLogger::LogVerbose()
+----
+5: ClientStateClientHello::OnHandshakeMessageReceived()
+----
+
+5:
+Function: ClientStateClientHello::OnHandshakeMessageReceived()
+----
+7: ServerStateClientHello::OnHandshakeMessageReceived()
+----
+
+7:
+Function: ServerStateClientHello::OnHandshakeMessageReceived()
+----
+----
+
