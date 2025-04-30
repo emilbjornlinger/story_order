@@ -57,7 +57,6 @@ fn main() {
     }
 
     println!("Topological order:");
-    let mut idx = 1;
     while let Some(i) = ts.pop() {
         println!("{i}:");
         println!("Function: {}", match file_map.get(&i) {Some(name) => name, None => "unknown function"});
@@ -68,8 +67,6 @@ fn main() {
             println!("{file_idx}: {}", match file_map.get(&file_idx) {Some(name) => name, None => "unknown function"});
         }
         println!("----\n");
-
-        idx += 1;
     }
 }
 
